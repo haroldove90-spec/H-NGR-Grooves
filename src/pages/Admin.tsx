@@ -18,10 +18,10 @@ const mockSalesData = [
 ];
 
 const mockCategoryData = [
-  { name: 'Rosas', value: 450 },
-  { name: 'Tulipanes', value: 320 },
-  { name: 'Orquídeas', value: 580 },
-  { name: 'Arreglos Mixtos', value: 410 },
+  { name: 'Rock', value: 450 },
+  { name: 'Jazz', value: 320 },
+  { name: 'Electronic', value: 580 },
+  { name: 'Latin', value: 410 },
 ];
 
 const AdminLayout = ({ children }: { children: React.ReactNode }) => {
@@ -40,12 +40,7 @@ const AdminLayout = ({ children }: { children: React.ReactNode }) => {
       {/* Mobile Header */}
       <div className="md:hidden bg-black shadow-sm p-4 flex justify-between items-center sticky top-0 z-50">
         <div className="flex items-center space-x-3">
-          <img 
-            src="https://appdesignproyectos.com/floreriaricardo.jpg" 
-            alt="Florería Ricardo" 
-            className="h-8 object-contain"
-            referrerPolicy="no-referrer"
-          />
+          <div className="text-sm font-serif font-bold text-white tracking-widest uppercase">H-NGR <span className="text-gold">Grooves</span></div>
           <div className="h-6 w-px bg-white/20"></div>
           <span className="text-xs font-bold text-white uppercase tracking-widest">Admin</span>
         </div>
@@ -73,12 +68,7 @@ const AdminLayout = ({ children }: { children: React.ReactNode }) => {
 
             <div className="flex justify-between items-center mb-12 relative z-10">
               <div className="flex items-center space-x-3">
-                <img 
-                  src="https://appdesignproyectos.com/floreriaricardo.jpg" 
-                  alt="Florería Ricardo" 
-                  className="h-10 object-contain"
-                  referrerPolicy="no-referrer"
-                />
+                <div className="text-sm font-serif font-bold text-white tracking-widest uppercase">H-NGR <span className="text-gold">Grooves</span></div>
                 <div className="h-8 w-px bg-white/20"></div>
                 <span className="text-sm font-bold text-white uppercase tracking-widest">Admin</span>
               </div>
@@ -193,12 +183,7 @@ const AdminLayout = ({ children }: { children: React.ReactNode }) => {
       {/* Desktop Sidebar */}
       <aside className="hidden md:flex w-64 bg-black text-white flex-col sticky top-0 h-screen z-40">
         <div className="hidden md:block p-6 border-b border-white/10">
-          <img 
-            src="https://appdesignproyectos.com/floreriaricardo.jpg" 
-            alt="Florería Ricardo" 
-            className="h-10 object-contain mb-2"
-            referrerPolicy="no-referrer"
-          />
+          <div className="text-lg font-serif font-bold text-white tracking-widest uppercase mb-2">H-NGR <span className="text-gold">Grooves</span></div>
           <p className="text-xs text-white/50 uppercase tracking-widest">Panel de Control</p>
         </div>
         <nav className="flex-1 p-4 space-y-2 overflow-y-auto">
@@ -579,7 +564,7 @@ const AdminProducts = () => {
                   value={formData.name}
                   onChange={e => setFormData({...formData, name: e.target.value})}
                   className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent"
-                  placeholder="Ej. Ramo de Rosas"
+                  placeholder="Ej. LP Rock Clásico"
                 />
               </div>
               <div>

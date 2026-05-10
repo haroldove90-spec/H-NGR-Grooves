@@ -137,7 +137,7 @@ const Login = () => {
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="admin@floreriaricardo.com" 
+                placeholder="admin@hngrgrooves.com" 
                 className="w-full border border-gray-200 pl-10 pr-4 py-3 rounded-lg outline-none focus:border-black transition-colors" 
               />
             </div>
@@ -206,7 +206,7 @@ const Login = () => {
         </div>
 
         <div className="mt-8 text-center">
-          <p className="text-xs text-gray-400">Florería Ricardo &copy; {new Date().getFullYear()}</p>
+          <p className="text-xs text-gray-400">H-NGR Grooves &copy; {new Date().getFullYear()}</p>
         </div>
       </motion.div>
     </div>

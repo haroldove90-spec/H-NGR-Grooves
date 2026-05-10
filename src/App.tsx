@@ -190,15 +190,15 @@ R:
 
 🌸EN CASO DE NO ENCONTRARSE LA PERSONA, EL OBSEQUIO SE REGRESARA  A LA FLORERÍA DONDE PODRÁ RECOGERLO O RE AGENDAR UNA SEGUNDA ENTREGA CON COSTO IGUAL AL DEL PRIMER ENVÍO; POR ESTE RAZÓN LE PEDIMOS QUE LOS DATOS SEAN CORRECTOS Y ESTÉN COMPLETOS
 
-🌸ATT: FLORERÍA RICARDO`;
+🌸ATT: H-NGR GROOVES`;
 
 const CheckoutModal = () => {
   const { checkoutProduct, setCheckoutProduct } = useCart();
 
   const handleConfirm = () => {
-    const message = `🌟 *NUEVO PEDIDO - FLORERÍA RICARDO* 🌟\n\n¡Hola! Me gustaría comprar el siguiente producto:\n\n🛍️ *Producto:* ${checkoutProduct?.name}\n💰 *Precio:* $${checkoutProduct?.price.toFixed(2)}`;
+    const message = `🌟 *NUEVO PEDIDO - H-NGR GROOVES* 🌟\n\n¡Hola! Me gustaría comprar el siguiente producto:\n\n🛍️ *Producto:* ${checkoutProduct?.name}\n💰 *Precio:* $${checkoutProduct?.price.toFixed(2)}`;
     const encodedMessage = encodeURIComponent(message);
-    window.open(`https://wa.me/525559623337?text=${encodedMessage}`, '_blank');
+    window.open(`https://wa.me/525624222449?text=${encodedMessage}`, '_blank');
     setCheckoutProduct(null);
   };
 
@@ -275,12 +275,7 @@ const Header = () => {
 
         {/* Logo */}
         <Link to="/" className="flex items-center justify-center">
-          <img 
-            src="https://appdesignproyectos.com/floreriaricardo.jpg" 
-            alt="Florería Ricardo" 
-            className="h-10 md:h-12 object-contain"
-            referrerPolicy="no-referrer"
-          />
+          <div className="text-xl md:text-2xl font-serif font-bold text-white tracking-widest uppercase">H-NGR <span className="text-gold">Grooves</span></div>
         </Link>
 
         {/* Desktop Nav */}
@@ -323,12 +318,7 @@ const Header = () => {
             className="fixed inset-0 bg-black z-50 flex flex-col p-6 overflow-hidden"
           >
             <div className="flex justify-between items-center mb-12 relative z-10">
-              <img 
-                src="https://appdesignproyectos.com/floreriaricardo.jpg" 
-                alt="Florería Ricardo" 
-                className="h-12 object-contain"
-                referrerPolicy="no-referrer"
-              />
+              <div className="text-xl font-serif font-bold text-white tracking-widest uppercase">H-NGR <span className="text-gold">Grooves</span></div>
               <button 
                 onClick={() => setMobileMenuOpen(false)} 
                 className="w-10 h-10 bg-white rounded-full flex items-center justify-center text-black shadow-sm border border-gray-200 active:scale-90 transition-transform"
@@ -396,8 +386,8 @@ const Header = () => {
             
             <div className="mt-auto text-center pb-8 relative z-10">
               <div className="w-16 h-1 bg-gray-800 mx-auto rounded-full mb-6"></div>
-              <p className="text-white/50 text-sm font-light uppercase tracking-widest">La belleza de las flores en</p>
-              <p className="text-white font-serif text-lg mt-1">Florería Ricardo</p>
+              <p className="text-white/50 text-sm font-light uppercase tracking-widest">El mejor ritmo en</p>
+              <p className="text-white font-serif text-lg mt-1">H-NGR Grooves</p>
             </div>
           </motion.div>
         )}
@@ -412,20 +402,20 @@ const HeroSlider = ({ customSlides }: { customSlides?: any[] }) => {
   
   const defaultSlides = [
     {
-      image: "https://media.istockphoto.com/id/902155732/es/foto/mixto-ramo-de-flores.jpg?b=1&s=612x612&w=0&k=20&c=N-npmQDqTzcnJitpfHhfpJqWE7br9EaN84f78c7eFcg=",
-      text: "La belleza de las flores en cada rincón. Descubre nuestros arreglos exclusivos.",
+      image: "https://images.unsplash.com/photo-1603048588665-791ca8aea617?q=80&w=2000&auto=format&fit=crop",
+      text: "El sonido auténtico del vinilo. Descubre nuestra colección de clásicos y novedades.",
       subtitle: "",
       button: "Descubrir Colección"
     },
     {
-      image: "https://media.istockphoto.com/id/1401141400/es/foto/bodeg%C3%B3n-de-oto%C3%B1o-con-flores-de-jard%C3%ADn-hermoso-ramo-oto%C3%B1al-en-jarr%C3%B3n-manzanas-y-bayas-sobre.jpg?s=612x612&w=0&k=20&c=6_dKEjb4b2Tpmm2vT00JwK6DGuU-KBy-sWdyam_6GrM=",
-      text: "Arreglos florales diseñados con pasión. Rosas, tulipanes y flores de temporada.",
+      image: "https://images.unsplash.com/photo-1539375665275-f9ad415ef9ac?q=80&w=2000&auto=format&fit=crop",
+      text: "Ediciones limitadas y tesoros musicales. Rock, Jazz, Soul y mucho más.",
       subtitle: "",
       button: "Descubrir Colección"
     },
     {
-      image: "https://wallpapers.com/images/hd/floral-arrangement-2048-x-1365-wallpaper-vgmffof84qm8o3av.jpg",
-      text: "Expresa tus sentimientos con flores. Entregas a domicilio con frescura garantizada.",
+      image: "https://images.unsplash.com/photo-1542208998-f6dbbb27a72f?q=80&w=2000&auto=format&fit=crop",
+      text: "Vive la música, colecciona el arte. Envíos seguros a todo el país.",
       subtitle: "",
       button: "Descubrir Colección"
     }
@@ -587,8 +577,8 @@ const HeroSlider = ({ customSlides }: { customSlides?: any[] }) => {
 };
 
 const WelcomeSection = () => {
-  const phoneNumber = "525559623337";
-  const message = `Hola! Me gustaría solicitar informes sobre las promociones del mes y arreglos florales.\n\nAtte: [Tu Nombre]`;
+  const phoneNumber = "525624222449";
+  const message = `Hola! Me gustaría solicitar informes sobre los discos de vinilo disponibles y promociones.\n\nAtte: [Tu Nombre]`;
   const encodedMessage = encodeURIComponent(message);
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
 
@@ -621,12 +611,12 @@ const createSlug = (text: string) => {
 
 const HomeCategories = ({ customCategories }: { customCategories?: any[] }) => {
   const defaultCategories = [
-    { name: "Ramos" },
-    { name: "Cajas" },
-    { name: "Arreglos" },
-    { name: "Orquídeas" },
-    { name: "Globos" },
-    { name: "Eventos" }
+    { name: "Rock" },
+    { name: "Jazz" },
+    { name: "Electronic" },
+    { name: "Hip Hop" },
+    { name: "Latin" },
+    { name: "Especiales" }
   ];
 
   const categories = customCategories && customCategories.length > 0 
@@ -844,8 +834,8 @@ const PhotoGallery = ({ category }: { category?: string | null }) => {
                 referrerPolicy="no-referrer"
               />
               <div className="absolute -bottom-10 left-0 right-0 text-center">
-                <p className="text-white font-serif text-lg tracking-widest uppercase">Florería Ricardo</p>
-                <p className="text-white/40 text-[10px] tracking-[0.3em] mt-2">DISEÑO EXCLUSIVO</p>
+                <p className="text-white font-serif text-lg tracking-widest uppercase">H-NGR Grooves</p>
+                <p className="text-white/40 text-[10px] tracking-[0.3em] mt-2">EDICIÓN LIMITADA</p>
               </div>
             </motion.div>
           </motion.div>
@@ -858,18 +848,18 @@ const PhotoGallery = ({ category }: { category?: string | null }) => {
 const ValuesSection = () => {
   const values = [
     {
-      title: "Diseño Floral Exclusivo",
-      desc: "Cada arreglo es único, diseñado por expertos floristas para capturar la esencia de cada ocasión.",
+      title: "Colección Exclusiva",
+      desc: "Seleccionamos minuciosamente cada disco para ofrecerte solo la mejor calidad sonora y artística.",
       icon: Award
     },
     {
-      title: "Entrega Personalizada",
-      desc: "Nos aseguramos de que tus flores lleguen en el momento perfecto y con el cuidado que merecen.",
+      title: "Envío Garantizado",
+      desc: "Empaque profesional anti-impactos para que tus vinilos lleguen en perfectas condiciones.",
       icon: HeartHandshake
     },
     {
-      title: "Máxima Frescura",
-      desc: "Seleccionamos nuestras flores diariamente para garantizar que duren mucho más tiempo en tu hogar.",
+      title: "Audio Analógico",
+      desc: "La calidez y profundidad del sonido que solo el vinilo puede ofrecer a tus oídos.",
       icon: Snowflake
     }
   ];
@@ -899,29 +889,29 @@ const ValuesSection = () => {
 const FeaturedCategories = () => {
   const categories = [
     {
-      name: "Rosas Rojas",
-      desc: "El símbolo clásico del amor y la pasión. Rosas de tallo largo seleccionadas por su color y fragancia.",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzTjXosrNpDic79eqybv-O5EslfXS6wlgpLg&s"
+      name: "Clásicos del Rock",
+      desc: "Desde Led Zeppelin hasta Pink Floyd. Los discos que definieron generaciones.",
+      image: "https://images.unsplash.com/photo-1542208998-f6dbbb27a72f?q=80&w=800"
     },
     {
-      name: "Tulipanes",
-      desc: "Elegancia y frescura en una variedad de colores vibrantes. Perfectos para iluminar cualquier espacio.",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaBkHMX2ZKrElpc1NXO7fNglXzVp-DWrX2wg&s"
+      name: "Jazz & Soul",
+      desc: "La elegancia del jazz clásico y la profundidad del soul en formato analógico.",
+      image: "https://images.unsplash.com/photo-1525926477810-9115286b89ff?q=80&w=800"
     },
     {
-      name: "Arreglos Mixtos",
-      desc: "Combinaciones artísticas de flores de temporada que crean texturas y aromas únicos.",
-      image: "https://floreriamayela.com/wp-content/uploads/2019/12/A314.jpg"
+      name: "Electrónica",
+      desc: "Beats, sintetizadores y ritmos vanguardistas para los amantes del club y la experimentación.",
+      image: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=800"
     },
     {
-      name: "Ocasiones Especiales",
-      desc: "Diseños exclusivos para bodas, aniversarios y momentos que merecen ser celebrados con flores.",
-      image: "https://i.pinimg.com/736x/e2/99/05/e2990573cdd3c1d03468a5cb62542990.jpg"
+      name: "Nuevos Lanzamientos",
+      desc: "Lo más reciente de la escena musical internacional directo a tu tocadiscos.",
+      image: "https://images.unsplash.com/photo-1603048588665-791ca8aea617?q=80&w=800"
     },
     {
-      name: "Lo más vendido",
-      desc: "Nuestra colección más exclusiva de arreglos premium y detalles únicos para los gustos más exigentes.",
-      image: "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSJ4YWuFqLKrPpSlUgLC5yi-J5IkFKFhF3jcW1h21CkDnUUjVmQi8AvwdNNrrmTzqas2gvXEC4UbP_ZMLVR5SMxHTGP5K7Fm2dcviaHclJjZUorRjH7S1TOpZw"
+      name: "Accesorios",
+      desc: "Limpiadores, fundas y todo lo necesario para mantener tu colección en estado impecable.",
+      image: "https://images.unsplash.com/photo-1539375665275-f9ad415ef9ac?q=80&w=800"
     }
   ];
 
@@ -973,7 +963,7 @@ const PrivacyPolicy = () => (
       <section>
         <h2 className="text-xl font-serif text-black mb-4 uppercase tracking-wider">Aviso de Privacidad Simplificado</h2>
         <p>
-          Florería Ricardo, con domicilio en la zona metropolitana de la Ciudad de México (Tlalnepantla y alrededores), es responsable del tratamiento de sus datos personales.
+          H-NGR Grooves es responsable del tratamiento de sus datos personales.
         </p>
       </section>
 
@@ -983,10 +973,9 @@ const PrivacyPolicy = () => (
           Los datos personales que recopilamos a través de nuestra tienda en línea y WhatsApp serán utilizados para las siguientes finalidades necesarias para el servicio:
         </p>
         <ul className="list-disc pl-6 space-y-2">
-          <li>Identificación del remitente y confirmación del pedido.</li>
-          <li>Logística de entrega en el domicilio indicado.</li>
-          <li>Comunicación directa en caso de eventualidades con la entrega.</li>
-          <li>Notificación de confirmación de recepción del obsequio.</li>
+          <li>Identificación del comprador y confirmación del pedido.</li>
+          <li>Logística de envío de los productos.</li>
+          <li>Comunicación directa sobre el estado de su pedido.</li>
         </ul>
       </section>
 
@@ -1015,7 +1004,7 @@ const HowToBuy = () => (
             {
               step: "01",
               title: "Explora nuestro catálogo",
-              desc: "Elige el diseño floral que más te guste de nuestra colección."
+              desc: "Elige el disco de vinilo que más te guste de nuestra colección."
             },
             {
               step: "02",
@@ -1057,9 +1046,9 @@ const Footer = () => {
     <footer className="bg-black text-white pt-24 pb-12 px-6 md:px-12">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-8 mb-20">
         <div className="md:col-span-5 lg:col-span-4">
-          <div className="text-3xl font-serif font-semibold tracking-widest uppercase mb-6 text-white">Florería Ricardo</div>
+          <div className="text-3xl font-serif font-semibold tracking-widest uppercase mb-6 text-white">H-NGR Grooves</div>
           <p className="text-white/70 font-light text-sm leading-relaxed max-w-sm">
-            La belleza de las flores en tu hogar. Arreglos exclusivos y frescura garantizada para cada momento especial.
+            Los mejores surcos de vinilo para tu colección. Calidad analógica y pasión musical en cada entrega.
           </p>
         </div>
         
@@ -1076,8 +1065,8 @@ const Footer = () => {
         <div className="md:col-span-4 lg:col-span-4">
           <h4 className="font-serif text-lg mb-6 uppercase tracking-[0.15em] text-white/60">Contacto</h4>
           <ul className="space-y-4 text-white/80 font-light text-sm">
-            <li>contacto@floreriaricardo.com</li>
-            <li>+52 55 4514 4797</li>
+            <li>contacto@hngrgrooves.com</li>
+            <li>+52 56 2422 2449</li>
             <li className="pt-4">
               <button className="flex items-center justify-center space-x-3 bg-white text-black px-6 py-3 rounded-sm transition-colors w-full sm:w-auto font-bold">
                 <MessageCircle size={18} />
@@ -1089,9 +1078,9 @@ const Footer = () => {
       </div>
       
       <div className="max-w-7xl mx-auto border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-white/50 text-xs font-light">
-        <p>&copy; {new Date().getFullYear()} Florería Ricardo. Todos los derechos reservados.</p>
+        <p>&copy; {new Date().getFullYear()} H-NGR Grooves. Todos los derechos reservados.</p>
         <div className="mt-4 md:mt-0 flex items-center space-x-6">
-          <p>Diseño Minimalista & Premium</p>
+          <p>Pasión por el Vinilo</p>
           <Link to="/admin" className="hover:text-gold transition-colors">Acceso Admin</Link>
         </div>
       </div>
@@ -1139,10 +1128,10 @@ const ProductsSection = ({ customTitles }: { customTitles?: any }) => {
     <section id="tienda" className="py-24 px-4 md:px-6 lg:px-12 max-w-7xl mx-auto overflow-hidden">
       <div className="text-center mb-12 md:mb-16">
         <h2 className="text-[10px] md:text-xs uppercase tracking-[0.3em] text-black mb-4 font-semibold">
-          {customTitles?.special_edition_title || 'Nuestros Arreglos'}
+          {customTitles?.special_edition_title || 'Nuestra Colección'}
         </h2>
         <h3 className="text-3xl md:text-4xl font-serif text-black mb-6">
-          {customTitles?.special_edition_subtitle || 'Lo más vendido'}
+          {customTitles?.special_edition_subtitle || 'Lo más destacado'}
         </h3>
         <div className="w-12 h-[2px] bg-black mx-auto" />
       </div>
@@ -1434,14 +1423,14 @@ const CartModal = () => {
   const handleWhatsAppCheckout = () => {
     if (cart.length === 0) return;
     
-    let message = "🌟 *NUEVO PEDIDO - FLORERÍA RICARDO* 🌟\n\n¡Hola! Me gustaría comprar los siguientes productos:\n\n";
+    let message = "🌟 *NUEVO PEDIDO - H-NGR GROOVES* 🌟\n\n¡Hola! Me gustaría comprar los siguientes productos:\n\n";
     cart.forEach(item => {
       message += `- ${item.quantity}x ${item.product.name} ($${(item.product.price * item.quantity).toFixed(2)})\n`;
     });
     message += `\n*Total: $${cartTotal.toFixed(2)}*`;
     
     const encodedMessage = encodeURIComponent(message);
-    window.open(`https://wa.me/525559623337?text=${encodedMessage}`, '_blank');
+    window.open(`https://wa.me/525624222449?text=${encodedMessage}`, '_blank');
   };
 
   return (
@@ -1537,7 +1526,7 @@ const ContactSection = () => {
           <h3 className="text-4xl font-serif text-black mb-6">¿Tienes alguna duda o pedido especial?</h3>
           <div className="w-12 h-[2px] bg-black mb-8" />
           <p className="text-black/70 font-light leading-relaxed mb-8">
-            Ponte en contacto con nosotros. Estamos aquí para ayudarte a seleccionar las mejores flores para tu hogar o evento. Llena el formulario y te responderemos a la brevedad.
+            Ponte en contacto con nosotros. Estamos aquí para ayudarte a encontrar ese disco especial o resolver cualquier duda sobre nuestra colección. Llena el formulario y te responderemos a la brevedad.
           </p>
           <div className="space-y-4 text-black">
             <div className="flex items-center space-x-4">
@@ -1546,7 +1535,7 @@ const ContactSection = () => {
               </div>
               <div>
                 <p className="text-sm font-bold text-black">WhatsApp / Teléfono</p>
-                <p className="text-sm font-light">+52 55 5962 3337</p>
+                <p className="text-sm font-light">+52 56 2422 2449</p>
               </div>
             </div>
             <div className="flex items-center space-x-4">
@@ -1555,7 +1544,7 @@ const ContactSection = () => {
               </div>
               <div>
                 <p className="text-sm font-bold text-black">Correo Electrónico</p>
-                <p className="text-sm font-light">contacto@floreriaricardo.com</p>
+                <p className="text-sm font-light">contacto@hngrgrooves.com</p>
               </div>
             </div>
           </div>
@@ -1608,7 +1597,7 @@ const ContactSection = () => {
                 </div>
                 <h4 className="text-2xl font-serif text-black uppercase tracking-widest">¡Mensaje Enviado!</h4>
                 <p className="text-black/60 font-light max-w-xs mx-auto">
-                  Gracias por contactarnos. Un especialista de Florería Ricardo se pondrá en contacto contigo muy pronto.
+                  Gracias por contactarnos. Un especialista de H-NGR Grooves se pondrá en contacto contigo muy pronto.
                 </p>
                 <button 
                   onClick={() => setSubmitted(false)}
@@ -1695,13 +1684,13 @@ const ProductsPage = () => {
       {/* Header */}
       <div className="bg-black py-16 px-6 text-center">
         <h1 className="text-3xl md:text-5xl font-serif text-white mb-4 uppercase tracking-[0.2em] animate-in fade-in slide-in-from-top duration-1000">
-          {categoryFilter ? categoryFilter : 'Nuestras Flores'}
+          {categoryFilter ? categoryFilter : 'Nuestros Vinilos'}
         </h1>
         <div className="w-12 h-[2px] bg-gold mx-auto mb-6" />
         <p className="text-white/70 font-light max-w-2xl mx-auto">
           {categoryFilter 
-            ? `Explora nuestra colección exclusiva de ${categoryFilter}. Arreglos diseñados para cautivar en cada detalle.`
-            : 'Explora nuestra selección premium de arreglos florales y ramos, diseñados para cautivar y emocionar.'
+            ? `Explora nuestra colección exclusiva de ${categoryFilter}. Discos seleccionados para audiófilos exigentes.`
+            : 'Explora nuestra selección premium de discos de vinilo y ediciones especiales, diseñados para emocionar.'
           }
         </p>
       </div>
@@ -1887,8 +1876,8 @@ const ProductsPage = () => {
 };
 
 const FloatingWhatsAppButton = () => {
-  const phoneNumber = "525559623337";
-  const message = `Hola! Me gustaría solicitar informes sobre sus arreglos florales.\n\nAtte: [Tu Nombre]`;
+  const phoneNumber = "525624222449";
+  const message = `Hola! Me gustaría solicitar informes sobre sus discos de vinilo.\n\nAtte: [Tu Nombre]`;
   const encodedMessage = encodeURIComponent(message);
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
 
@@ -2153,7 +2142,7 @@ const NotFound = () => {
       <h1 className="text-6xl font-serif text-black mb-4">404</h1>
       <h2 className="text-xl uppercase tracking-[0.3em] text-black mb-6">Página no encontrada</h2>
       <p className="text-gray-500 font-light max-w-md mx-auto mb-10">
-        Lo sentimos, la página que buscas no existe o ha sido movida. Explora nuestras hermosas colecciones florales en su lugar.
+        Lo sentimos, la página que buscas no existe o ha sido movida. Explora nuestra colección de vinilos en su lugar.
       </p>
       <Link 
         to="/"

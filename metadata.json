@@ -1,0 +1,8 @@
+{
+  "name": "H-NGR Grooves",
+  "description": "Tienda en línea discos de vinilo",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": []
+}
